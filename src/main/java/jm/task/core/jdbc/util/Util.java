@@ -13,10 +13,7 @@ public class Util {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-
-            // Установка соединения
             connection = DriverManager.getConnection(url, username, password);
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
