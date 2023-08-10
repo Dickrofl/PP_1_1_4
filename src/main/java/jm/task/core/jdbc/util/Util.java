@@ -6,13 +6,13 @@ import java.sql.SQLException;
 
 public class Util {
 
-    private static final String url = "jdbc:mysql://localhost:3306/new_schema";
-    private static final String username = "root";
-    private static final String password = "0703";
+    private static final String URL = "jdbc:mysql://localhost:3306/new_schema";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "0703";
 
     public static Connection getConnection() {
         try {
-            return DriverManager.getConnection(url, username, password);
+            return DriverManager.getConnection(URL, USERNAME, PASSWORD);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
